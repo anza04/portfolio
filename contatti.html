@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Anzani</title>
+    <link rel="stylesheet" href="contacts.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+      </style>
+</head>
+<body id="body">
+    <div class="nav">
+        <a href="./about.html"><span class="link">ABOUT ME</span></a>
+        <a href="./index.html"><span class="link">HOME</span></a>
+    </div>
+
+    <div class="content">
+
+        <div class="title">Contact Me</div>
+
+        <button onclick="window.location.href='mailto:federico.anzani04@gmail.com?subject=Richiesta di informazioni'">E-Mail</button>
+        <button id="linkedin" onclick="window.location.href='https://www.linkedin.com/in/federico-anzani-0926b4263/'">Linkedin</button>
+        <button id="whatsapp" onclick="window.location.href='https://wa.me/393441638406/?text=Richiesta%20di%20informazioni'">Whatsapp</button>
+        <button id="instagram" onclick="window.location.href='https://instagram.com/the_anza'">Instagram</button>
+
+
+        <script>
+            let wa = document.getElementById("whatsapp");
+            let li = document.getElementById("linkedin");
+            let insta = document.getElementById("instagram");
+
+
+            li.addEventListener("mouseenter",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#0A66C2 0.5px, transparent 0.5px), radial-gradient(#0A66C2 0.5px, transparent 0.5px)";
+
+            })
+            li.addEventListener("mouseleave",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px)";
+            });
+
+
+            insta.addEventListener("mouseenter",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#FC00CD 0.5px, transparent 0.5px), radial-gradient(#F9C300 0.5px, transparent 0.5px)";
+
+            })
+            insta.addEventListener("mouseleave",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px)";
+            });
+
+
+
+            wa.addEventListener("mouseenter",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#25D366 0.5px, transparent 0.5px), radial-gradient(#25D366 0.5px, transparent 0.5px)";
+
+            })
+            wa.addEventListener("mouseleave",()=>{
+                document.getElementById("body").style.backgroundImage="radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px)";
+            });
+        </script>
+    </div>
+</body>
+</html>
