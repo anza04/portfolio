@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px);
   background-size: 37px 37px;
   background-position: 0 0, 18.5px 18.5px;
@@ -14,6 +14,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .nav{
@@ -25,6 +26,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 a{
@@ -33,6 +35,7 @@ a{
   color: white;
   font-family: 'Gloock', serif;
   font-size: 25px;
+  overflow: hidden;
 }
 
 .link{
@@ -53,12 +56,14 @@ a{
   align-items: center;
   flex-direction: column;
   background: transparent;
+  overflow: hidden;
 }
 
 .title{
   font-size: calc(10vh + 80px);
   font-weight: bold;
   text-align: center;
+  overflow: hidden;
 
 }
 
@@ -168,5 +173,11 @@ a{
 
   .blob4, .blob5, .blob6{
     display: none;
+  }
+  .blob3{
+    top: 17%;
+  }
+  .blob2{
+    left: 70%;
   }
 }
