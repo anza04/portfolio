@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px);
+    background-size: 37px 37px;
+    background-position: 0 0, 18.5px 18.5px;
+    background-color: #000000;
+  }
+  
+  .nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 25px;
+    overflow: hidden;
+  }
+  
+  .link{
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .link:hover{
+    border-bottom: 5px solid white;
+  }
+  
+  .content{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  
+  .blob1 { 
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: transparent;
+  }
+  
+  .blob2 { 
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    background: transparent;
+  }
+  
+  
+  .blob3 { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    background: transparent;
+  }
+  
+  .blob1, .blob2, .blob3{
+    transition: all 3s ease;
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+    .content{
+        height: 195%;
+        margin-top: 5vh;
+        width: 98%;
+    }
+  
+    .blob1, .blob2, .blob3{
+        margin-top:  5vh;
+        position: inherit;
+        width: 100%;
+        height: 60vh;
+        transform: translate(0%, 0%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blob1 svg, .blob2 svg, .blob3 svg{
+        height: 60vh;
+        width: 60vh;
+    }
+  }
