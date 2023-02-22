@@ -12,9 +12,11 @@
 </head>
 <body id="body">
     <div class="nav">
-        <a href="./about.html"><span class="link">ABOUT ME</span></a>
+        <a href="#" onclick="working()"><span class="link">ABOUT ME</span></a>
         <a href="./index.html"><span class="link">HOME</span></a>
     </div>
+
+    <div id="warning">Section in progress.....</div>
 
     <div class="content">
 
@@ -30,6 +32,17 @@
             let wa = document.getElementById("whatsapp");
             let li = document.getElementById("linkedin");
             let insta = document.getElementById("instagram");
+            let warning = document.getElementById("warning");
+
+            function working()
+            {
+                warning.style.display="flex";
+            }
+
+            warning.addEventListener("click", ()=>{
+                warning.style.display="none";
+            })
+
 
 
             li.addEventListener("mouseenter",()=>{

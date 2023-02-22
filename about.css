@@ -84,6 +84,17 @@
   .blob1, .blob2, .blob3{
     transition: all 3s ease;
   }
+
+  .tecnologie{
+    width: 30vh;
+    height: 30vh;
+    transform: translate(30%, -120%);
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+  }
   
   @media only screen and (max-width: 700px) {
   
@@ -93,9 +104,13 @@
         width: 98%;
     }
   
-    .blob1, .blob2, .blob3{
+    .blob1{
+        display: none;
+    }
+    
+    .blob2, .blob3{
         margin-top:  5vh;
-        position: inherit;
+        position: relative;
         width: 100%;
         height: 60vh;
         transform: translate(0%, 0%);
@@ -103,8 +118,8 @@
         justify-content: center;
         align-items: center;
     }
-
-    .blob1 svg, .blob2 svg, .blob3 svg{
+    
+    .blob2 svg, .blob3 svg{
         height: 60vh;
         width: 60vh;
     }
