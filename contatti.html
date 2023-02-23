@@ -12,11 +12,11 @@
 </head>
 <body id="body">
     <div class="nav">
-        <a href="#" onclick="working()"><span class="link">ABOUT ME</span></a>
+        <!--<a href="#" onclick="working()"><span class="link">ABOUT ME</span></a>-->
         <a href="./index.html"><span class="link">HOME</span></a>
     </div>
 
-    <div id="warning">Section in progress.....</div>
+    <!----<div id="warning">Section in progress.....</div>---->
 
     <div class="content">
 
@@ -71,6 +71,14 @@
             wa.addEventListener("mouseleave",()=>{
                 document.getElementById("body").style.backgroundImage="radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, transparent 0.5px)";
             });
+
+            $(document).bind("contextmenu", function(e){
+                e.preventDefault();
+                if(e.which===123)
+                {
+                    return false;
+                }
+            })
         </script>
     </div>
 </body>
