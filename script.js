@@ -5,17 +5,11 @@ let quattro = document.getElementById("quattro");
 let cinque = document.getElementById("cinque");
 let sei = document.getElementById("sei");
 let title = document.getElementById("title");
-let warning = document.getElementById("warning");
 
 function working()
 {
     warning.style.display="flex";
 }
-
-warning.addEventListener("click", ()=>{
-    warning.style.display="none";
-})
-
 
 title.addEventListener("mouseover", ()=>{
     uno.classList.add("active");
